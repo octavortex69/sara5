@@ -1,0 +1,179 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 24px;
+  background-color: #ffe6e6;
+  /* Light pink */
+}
+
+/* Style the header with a romantic font and color */
+#header {
+  margin-bottom: 50px;
+  color: #ff6b6b;
+  /* Red */
+  /* font-family: 'Pacifico', cursive; */
+  /* Use a romantic font (Google Font: Pacifico) */
+  text-shadow: 1px 1px #ffffff;
+  /* Add a subtle text shadow for effect */
+}
+
+/* Style the loving feelings section */
+.loving-feelings {
+  padding: 20px;
+  background-color: #ffcccc;
+  /* Light coral */
+  border-radius: 10px;
+  /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add a soft shadow */
+  line-height: 1.6;
+  /* Increase line height for better readability */
+  position: relative;
+  /* Add this line to position hearts relative to the loving-feelings section */
+}
+
+/* Add floating hearts for a romantic effect */
+.heart {
+  position: absolute;
+  font-size: 20px;
+  color: #ff6b6b;
+  /* Red */
+  animation: float 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+/* Style the counter section */
+#counter {
+  font-size: 28px;
+  color: #ff6b6b;
+  /* Red */
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* Style the emojis */
+#emoji-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 24px;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Style the audio player */
+audio {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.love-feelings {
+  /* Use the same style as the loving-feelings div */
+  padding: 20px;
+  background-color: #ffcccc;
+  /* Light coral */
+  border-radius: 10px;
+  /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add a soft shadow */
+  line-height: 1.6;
+  /* Increase line height for better readability */
+  position: relative;
+  /* Add this line to position hearts relative to the love-feelings div */
+}
+
+.love-feelings img {
+  /* Add some spacing between images */
+  margin: 5px;
+  max-width: 100%;
+}
+
+/* Add floating hearts to the love-feelings div */
+.love-feelings .heart {
+  position: absolute;
+  font-size: 20px;
+  color: #ff6b6b;
+  /* Red */
+  animation: float 3s linear infinite;
+  pointer-events: none;
+}
+
+img {
+  height: 500px;
+
+}
+
+
+.puzzle {
+    margin-top: 10px;
+    margin-left: 1800px;
+    height: 29px;
+    width: 57px;
+}
+
+/* .puzzle:hover {
+    cursor: url('blue.png'), auto;
+  } */
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-container input[type="text"] {
+    width: 300px; /* Increase width */
+    height: 40px; /* Increase height */
+    padding: 10px; /* Increase padding */
+    font-size: 18px; /* Increase font size */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-container button {
+    width: 150px; /* Increase width */
+    height: 40px; /* Increase height */
+    padding: 10px;
+    font-size: 18px; /* Increase font size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .video {
+    height: 700px;
+  }
